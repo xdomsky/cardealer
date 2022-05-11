@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-1: #94d2bd;
+    --color-2: #005f73;
+    --color-3: #000;
+    --color-4: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    align-items: center;
+    padding: 10px 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+footer {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.content h1 {
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-2);
+}
+
+.content p {
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content input {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #E0E0E0;
+    color: #3D3D3D;
+    outline: 0;
+    border: none;
+    padding: 10px;
+}
+
+.content button {
+    font-size: 16px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    border: none;
+    outline: 0;
+    width: 450px;
+    height: 35px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.content button:hover {
+    background-color: #01343e;
+}
+
+.content label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.content p {
+    color: var(--color-black);
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.product-box {
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 15px 10px 0px;
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.product-desc {
+    margin: 0 auto;
+}
+
+.product-img img {
+    border-radius: 15px;
+    width: 260px;
+    height: 160px;
+}
+
+.product-desc h4 {
+    font-weight: 400;
+}
+
+.product-desc h3 {
+    font-weight: 500;
+}
+
+.product-desc button {
+    border: none;
+    padding: 0px;
+    outline: none;
+    background-color: transparent;
+    margin: 15px 0px 15px 0px;
+}
+
+.product-desc button a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid var(--color-1);
+    color: var(--color-1);
+    font-size: 14px;
+}
+
+.product-desc button a:hover {
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+.background {
+    background-image: url(../img/background.jpg);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desc {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: var(--color-4);
+    font-size: 20px;
+}
+
+.desc button {
+    margin: 10px 0px 0px 0px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    outline: none;
+    border: none;
+    padding: 15px;
+}
+
+.desc button a {
+    text-decoration: none;
+    color: var(--color-4);
+    font-size: 22px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.search button {
+    background-color: var(--color-2);
+    color: var(--color-4);
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 35px;
+    margin: 10px;
+}
+
+.search select {
+    width: auto;
+    height: 35px;
+    margin: 10px;
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content input {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 35px;
+        margin-top: 10px;
+        background-color: #E0E0E0;
+        color: #3D3D3D;
+        outline: 0;
+        border: none;
+        padding: 10px;
+    }
+
+    .content button {
+        font-size: 14px;
+        background-color: var(--color-2);
+        color: var(--color-4);
+        border: none;
+        outline: 0;
+        width: 350px;
+        height: 35px;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .content label {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    .background {
+        background-image: url(../img/background.jpg);
+        height: 85vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .desc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: var(--color-4);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .items-box {
+        margin-bottom: 50px;
+    }
+}
